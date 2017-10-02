@@ -12,11 +12,11 @@ $linear-overlay: white 30px, rgba(255,255,255,.4) 45px, rgba(255,255,255,.3) 50p
 @mixin scrollbar-overlay() {
   position: absolute;
   height: 100%;
-  width: 19px;
+  width: 24px;
   display: block;
   background-color: white;
   top: 0px;
-  right: 0px;
+  right: -5px;
 }
 
 @viewport{
@@ -347,6 +347,16 @@ body {
 }
 
 @media (max-width: 420px){
+  #search-page {
+    #search-bar {
+      width: 80%;
+    }
+
+    #user-list {
+      width: calc(80% + 20px);
+    }
+  }
+
   #user-detail-page {
     > section {
 
