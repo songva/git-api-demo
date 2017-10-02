@@ -12,11 +12,11 @@ $linear-overlay: white 30px, rgba(255,255,255,.4) 45px, rgba(255,255,255,.3) 50p
 @mixin scrollbar-overlay() {
   position: absolute;
   height: 100%;
-  width: 24px;
+  width: 25px;
   display: block;
   background-color: white;
   top: 0px;
-  right: -5px;
+  right: 0px;
 }
 
 @viewport{
@@ -113,9 +113,9 @@ body {
     }
 
     ul {
-      width: calc(100% - 20px);
+      width: calc(100% - 30px);
       margin: 0px;
-      padding: 0px 20px 0px 0px;
+      padding: 0px 30px 0px 0px;
       list-style: none;
       height: calc(100vh - 40px);
       overflow-y: scroll;
@@ -221,9 +221,9 @@ body {
     }
 
     ul {
-      width: calc(100% - 20px);
+      width: calc(100% - 30px);
       margin: 0px;
-      padding: 0px 20px 0px 0px;
+      padding: 0px 30px 0px 0px;
       list-style: none;
       height: calc(100vh - 20px);
       overflow-y: scroll;
@@ -312,13 +312,14 @@ body {
     }
 
     #user-list {
-      width: calc(60% + 20px);
-      padding-left: 20px;
+      width: calc(60% + 30px);
+      padding-left: 30px;
       min-width: auto;
 
       ul::before {
         height: calc(100vh - 120px);
         min-width: auto;
+        width: calc(100% - 30px);
       }
 
       ul {
@@ -353,7 +354,7 @@ body {
     }
 
     #user-list {
-      width: calc(80% + 20px);
+      width: calc(80% + 30px);
     }
   }
 
